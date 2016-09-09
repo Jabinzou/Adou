@@ -1,0 +1,628 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"> <!--对于低版本的ie进行最新的渲染-->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+    <title>Adou 2016</title>
+    <!-- Bootstrap -->
+    <link rel="shortcut icon"  href="img/logo.ico">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <link href="js/video-js.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" type="text/css" href="css/flexslider.css">
+    <link rel="stylesheet" type="text/css" href="css/iconfont.css">
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="//cdn.bootcss.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="//cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+  <div class="container-fluid navbar-wrapper navbar-fixed-top" name="top">
+     <nav class="navbar navbar-home ">
+        <div calss="container">
+           <div class="navbar-header" id="collapse">
+              <button type="button"  class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">切换导航</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <a id="jabin" class="navbar-brand" href="javascript:;" title="Adou"><img class="img-circle" src="img/logo.png" alt="Adou"></a>
+           </div>
+           <div id="nav-collapse"class="collapse navbar-collapse">
+              <ul class="nav  navbar-nav navbar-right">
+                <li class="navbar-item"><a href="#top" title="">首页</a></li>
+                <li class="navbar-item"><a href="#introduce" title="">关于阿豆</a></li>
+                <li class="navbar-item"><a href="#slider" title="">职位介绍</a></li>
+                <li class="navbar-item"><a href="#pic-carousel" title="">成员风采</a></li>
+                <li class="navbar-item"><a href="#offer-text" title="">招新流程</a></li>
+                <li class="navbar-item"><a href="#submit" title="">在线报名</a></li>
+              </ul>
+           </div>
+         </div>
+     </nav>
+  </div>
+  <!-- 背景 -->
+  <div class="header header-home" style="background: url(img/banner.jpg) no-repeat center center">
+     <div class="header-overlay"></div>
+     <div class="header-text">
+       <h1>The deepest and heaviest love must grow up
+        with the time</h1>
+     </div>
+  </div>
+  <!--阿豆介绍-->
+  <div class="container" id="introduce" >
+  	<div class="row">
+  	 	<div class="col-md-12 col-xm-12">
+  	 	  <a class="btn btn-success" role="button" data-toggle="collapse" href="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+		  关于阿豆（Click-me）
+		</a>
+		<div class="collapse" id="collapseExample">
+		  <div class="well">
+		    阿豆工作室成立于2003年9月，隶属于武汉科技大学校党委宣传部，是一支致力于各类网站的开发与制作，并兼顾图像处理、Flash制作、程序设计、计算机维护等业务的团队。 团队现有力量可为武汉科技大学各单位及校外企业提供网站建设的整体设计方案，提高网上办公效率，宣传整体形象。现已为学校党委宣传部、机械学院、科大电控、中观传媒等校内外单位成功设计制作相关网站上百个。
+		  </div>
+		</div>
+  	 	</div>
+  	 </div>
+  	 <div class="row">
+  	 	<div class="col-md-12  col-sm-12">
+  	 		<div class="video_box" style="width:1138px;height:641px;">
+        	<video id="example_video_1" class="video-js vjs-default-skin" controls preload="none" width="1138" height="641" poster="img/video_pic.jpg" data-setup="{}">
+            <source src="videos/WUST.mp4" type="video/mp4" />
+            <!-- <source src="http://static.smartisanos.cn/common/video/staff-interview-jianguo-design.mp4" type="video/mp4" />
+            <source src="http://static.smartisanos.cn/common/video/staff-interview-jianguo-design.mp4" type='video/mp4' />
+            <source src="http://static.smartisanos.cn/common/video/staff-interview-jianguo-design.webm" type='video/webm' />
+            <source src="http://static.smartisanos.cn/common/video/staff-interview-jianguo-design.ogv" type='video/ogg' /> -->
+            <track kind="captions" src="js/demo.captions.vtt" srclang="en" label="English"></track>
+            <!-- Tracks need an ending tag thanks to IE9 -->
+            <track kind="subtitles" src="js/demo.captions.vtt" srclang="en" label="English"></track>
+            <!-- Tracks need an ending tag thanks to IE9 -->
+            <p class="vjs-no-js">To view this video please enable JavaScript, and consider upgrading to a web browser that <a href="http://videojs.com/html5-video-support/" target="_blank">supports HTML5 video</a></p>
+           </video>
+         </div>
+  	 	
+  	  </div>
+   </div>
+</div>
+<!-- 幻灯片 -->
+  <div class="section1" id="slider">
+     <div class="flexslider text-slider slider-arrow-controls" directionNav="true">
+        <ul class="slides">
+           <li class="flex-active-slides">
+              <div class="row v-align pic-container">
+                 <div class="col-md-7 col-sm-6 text-center" id="left-img">
+                    <img src="img/web.png" alt="Screenshot" class="pic-one" draggable="false">
+                 </div>
+                 <div class="col-md-5 col-md-offset-1 col-sm-5 col-sm-offset-1" id="right-text">
+                   <h2 class="subheader inset-subtext" id="subheader">
+                     <strong class="slide-r">WEB前端设计(6-8人)</strong>
+                   </h2>
+                   <h4 class="inset-subtext">熟练使用Dreamweaver等工具掌握CSS+DIV,JS,Jquery等主流web技术
+						对常见的浏览器兼容性问题及html5+css3有一定了解
+                   </h4>
+                 </div>
+              </div>
+           </li>
+           <li class="flex-active-slides">
+              <div class="row v-align pic-container">
+                 <div class="col-md-7 col-sm-6 text-center " id="left-img">
+                    <img src="img/ps.png" alt="Screenshot" class="pic-two" draggable="false">
+                 </div>
+                 <div class="col-md-5 col-md-offset-1 col-sm-5 col-sm-offset-1" id="right-text">
+                   <h2 class="subheader inset-subtext" id="subheader">
+                     <strong class="slide-r">美工网页设计(5-6人)</strong>
+                   </h2>
+                   <h4 class="inset-subtext">熟练掌握Photosh、Flash等软件对UI设计、平面设计、视频制作有所的了解
+					独特的审美眼光，不断涌现创意灵感
+                   </h4>
+                 </div>
+              </div>
+           </li>
+           <li class="flex-active-slides">
+              <div class="row v-align pic-container">
+                 <div class="col-md-7 col-sm-6 text-center  clearfix" id="left-img">
+                    <img src="img/programer.png" alt="Screenshot" class="pic-three" draggable="false">
+                 </div>
+                 <div class="col-md-5 col-md-offset-1 col-sm-5 col-sm-offset-1" id="right-text">
+                   <h2 class="subheader inset-subtext" id="subheader">
+                     <strong class="slide-r">网站程序设计(8-10人)</strong>
+                   </h2>
+                   <h4 class="inset-subtext">对于“架构”，开发框架有一定了解掌握SQL、MySQL及相关构建优化技术
+					能用ASP.NET、JSP、PHP、JavaScript一种或多种语言编程
+                   </h4>
+                 </div>
+              </div>
+           </li>
+           <li class="flex-active-slides">
+              <div class="row v-align pic-container">
+                 <div class="col-md-7 col-sm-6 text-center  clearfix" id="left-img">
+                    <img src="img/admin.png" alt="Screenshot" class="pic-three" draggable="false">
+                 </div>
+                 <div class="col-md-5 col-md-offset-1 col-sm-5 col-sm-offset-1" id="right-text">
+                   <h2 class="subheader inset-subtext" id="subheader">
+                     <strong class="slide-r">行政办公(4-5人)</strong>
+                   </h2>
+                   <h4 class="inset-subtext">擅长网络推广及品牌营销拥有活动策划经验或勇于尝试，熟练使用office
+					有亲和力、组织协调能力及交际能力
+                   </h4>
+                 </div>
+              </div>
+           </li>
+        </ul>
+     </div>
+  </div>
+  <!-- 轮播 -->
+  <section id="pic-carousel" class="carousel slide" data-ride="carousel">
+      <ol class="carousel-indicators">
+        <li data-target="#pic-carousel" data-slide-to="0" class="active"></li>
+        <li data-target="#pic-carousel" data-slide-to="1"></li>
+        <li data-target="#pic-carousel" data-slide-to="2"></li>
+    </ol>
+    <div class="carousel-inner">
+        <div class="item active">
+            <img src="img/big1.png" alt="1 slide">
+
+            <div class="container">
+                <div class="carousel-caption">
+
+                    <p><a class="btn btn-lg btn-success" href="#offer-text"
+                          role="button" target="_blank">Follow Us</a></p>
+                </div>
+            </div>
+        </div>
+        <div class="item">
+            <img src="img/big2.png" alt="2 slide">
+
+            <div class="container">
+                <div class="carousel-caption">
+
+                    <p><a class="btn btn-lg btn-success" href="#offer-text" target="_blank"
+                          role="button">Follow Us</a></p>
+                </div>
+            </div>
+        </div>
+        <div class="item">
+            <img src="img/big3.jpg" alt="3 slide">
+
+            <div class="container">
+                <div class="carousel-caption">
+
+                    <p><a class="btn btn-lg btn-success" href="#offer-text" target="_blank"
+                          role="button">Follow Us</a></p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <a class="left carousel-control" href="#pic-carousel" data-slide="prev" id="lal"><span
+            class="glyphicon glyphicon-chevron-left"></span></a>
+    <a class="right carousel-control" href="#pic-carousel" data-slide="next"><span
+            class="glyphicon glyphicon-chevron-right"></span></a>
+  </section>
+  <!-- 右侧导航条 -->
+  <div class="toolbar">
+    <a href="javascript:;" title="" class="toolbar-item">
+       <span class="toolbar-btn">
+         <i class="toolbar-icon iconfont icon-weixin"></i>
+         <span class="toolbar-text">公众<br/>账号</span>
+       </span>
+       <span class="toolbar-layer toolbar-layer-weixin"></span>
+    </a>
+    <a href="javascript:;" title="" class="toolbar-item">
+       <span class="toolbar-btn">
+         <i class="toolbar-icon iconfont icon-fankui"></i>
+         <span class="toolbar-text">信息<br/>反馈</span>
+       </span>
+    </a>
+    <a href="javascript:;" title="" class="toolbar-item">
+       <span class="toolbar-btn">
+         <i class="toolbar-icon iconfont icon-app"></i>
+         <span class="toolbar-text">app<br/>下载</span>
+       </span>
+       <span class="toolbar-layer toolbar-layer-download"></span>
+    </a>
+    <a href="javascript:;" title="" class="toolbar-item" id="backtop">
+       <span class="toolbar-btn">
+         <i class="toolbar-icon iconfont icon-top"></i>
+         <span class="toolbar-text">返回<br/>顶部</span>
+       </span>
+    </a>
+  </div>
+  <!-- 图片展示 -->
+  <div class="container" id="member">
+  	 <div class="row">
+  	 	<div class="col-md-12 col-xm-12">
+  	 		<h1 class="gallery-title sliding-middle-out">豆子风采</h1>
+  	 		<h3 class="gallery-subtitle slide-r">只要不放弃，就没有什么能让自己退缩；只要够坚强，就没有什么能把自己打垮
+就会在最美的年纪遇见最好的自己</h3>
+  	 	</div>
+  	 </div>
+  	 <div class="row gallery-row">
+  	  <a href="#" title="">
+  	 	<div class="col col-xs-12 col-sm-3 col-md-3 col-lg-3">
+  	 		<div class="gallery-wrap">
+  	 			<div class="gallery-item gallery-intem-square" style="background-image:url(img/1.jpg)">
+  	 				<div class="gallery-item-overlay"></div>
+  	 				<div class="gallery-item-ribbon"></div>
+  	 				<div class="gallery-item-text text-center">
+  	 					<p>孙功旭</p>
+  	 					<p>美工部成员</p>
+  	 				</div>
+  	 			</div>
+  	 		</div>
+  	 	</div>
+  	  </a>
+  	  <a href="#" title="">
+  	 	<div class="col col-xs-12 col-sm-3 col-md-3 col-lg-3">
+  	 		<div class="gallery-wrap">
+  	 			<div class="gallery-item gallery-intem-square" style="background-image:url(img/2.jpg)">
+  	 				<div class="gallery-item-overlay"></div>
+  	 				<div class="gallery-item-ribbon"></div>
+  	 				<div class="gallery-item-text text-center" >
+  	 					<p>邹志鹏</p>
+  	 					<p>WEB前端成员</p>
+  	 				</div>
+  	 			</div>
+  	 		</div>
+  	 	</div>
+  	  </a>
+  	  <a href="#" title="">
+  	 	<div class="col col-xs-12 col-sm-3 col-md-3 col-lg-3">
+  	 		<div class="gallery-wrap">
+  	 			<div class="gallery-item gallery-intem-square" style="background-image:url(img/3.jpg)">
+  	 				<div class="gallery-item-overlay"></div>
+  	 				<div class="gallery-item-ribbon"></div>
+  	 				<div class="gallery-item-text text-center">
+  	 					<p>侯怡申</p>
+  	 					<p>行政部部长</p>
+  	 				</div>
+  	 			</div>
+  	 		</div>
+  	 	</div>
+  	  </a>
+  	  <a href="#" title="">
+  	 	<div class="col col-xs-12 col-sm-3 col-md-3 col-lg-3">
+  	 		<div class="gallery-wrap">
+  	 			<div class="gallery-item gallery-intem-square" style="background-image:url(img/4.jpg)">
+  	 				<div class="gallery-item-overlay"></div>
+  	 				<div class="gallery-item-ribbon"></div>
+  	 				<div class="gallery-item-text text-center">
+  	 					<p>冯航敏</p>
+  	 					<p>项目经理</p>
+  	 				</div>
+  	 			</div>
+  	 		</div>
+  	 	</div>
+  	  </a>
+  	 </div>
+  	 <div class="row gallery-row">
+  	  <a href="#" title="">
+  	 	<div class="col col-xs-12 col-sm-3 col-md-3 col-lg-3">
+  	 		<div class="gallery-wrap">
+  	 			<div class="gallery-item gallery-intem-square" style="background-image:url(img/5.jpg)">
+  	 				<div class="gallery-item-overlay"></div>
+  	 				<div class="gallery-item-ribbon"></div>
+  	 				<div class="gallery-item-text text-center">
+  	 					<p>杨康</p>
+  	 					<p>WEB前端成员</p>
+  	 				</div>
+  	 			</div>
+  	 		</div>
+  	 	</div>
+  	  </a>
+  	  <a href="#" title="">
+  	 	<div class="col col-xs-12 col-sm-3 col-md-3 col-lg-3">
+  	 		<div class="gallery-wrap">
+  	 			<div class="gallery-item gallery-intem-square" style="background-image:url(img/6.jpg)">
+  	 				<div class="gallery-item-overlay"></div>
+  	 				<div class="gallery-item-ribbon"></div>
+  	 				<div class="gallery-item-text text-center">
+  	 					<p>汪鑫</p>
+  	 					<p>美工部成员</p>
+  	 				</div>
+  	 			</div>
+  	 		</div>
+  	 	</div>
+  	  </a>
+  	  <a href="#" title="">
+  	 	<div class="col col-xs-12 col-sm-3 col-md-3 col-lg-3">
+  	 		<div class="gallery-wrap">
+  	 			<div class="gallery-item gallery-intem-square" style="background-image:url(img/7.jpg)">
+  	 				<div class="gallery-item-overlay"></div>
+  	 				<div class="gallery-item-ribbon"></div>
+  	 				<div class="gallery-item-text text-center">
+  	 					<p>明群英</p>
+  	 					<p>美工部成员</p>
+  	 				</div>
+  	 			</div>
+  	 		</div>
+  	 	</div>
+  	  </a>
+  	  <a href="#" title="">
+  	 	<div class="col col-xs-12 col-sm-3 col-md-3 col-lg-3">
+  	 		<div class="gallery-wrap">
+  	 			<div class="gallery-item gallery-intem-square" style="background-image:url(img/8.jpg)">
+  	 				<div class="gallery-item-overlay"></div>
+  	 				<div class="gallery-item-ribbon"></div>
+  	 				<div class="gallery-item-text text-center">
+  	 					<p>陈凯</p>
+  	 					<p>项目经理</p>
+  	 				</div>
+  	 			</div>
+  	 		</div>
+  	 	</div>
+  	  </a>
+  	 </div>
+  	  <div class="row gallery-row">
+  	  <a href="#" title="">
+  	 	<div class="col col-xs-12 col-sm-3 col-md-3 col-lg-3">
+  	 		<div class="gallery-wrap">
+  	 			<div class="gallery-item gallery-intem-square" style="background-image:url(img/9.jpg)">
+  	 				<div class="gallery-item-overlay"></div>
+  	 				<div class="gallery-item-ribbon"></div>
+  	 				<div class="gallery-item-text text-center">
+  	 					<p>毕建婷</p>
+  	 					<p>美工部成员</p>
+  	 				</div>
+  	 			</div>
+  	 		</div>
+  	 	</div>
+  	  </a>
+  	  <a href="#" title="">
+  	 	<div class="col col-xs-12 col-sm-3 col-md-3 col-lg-3">
+  	 		<div class="gallery-wrap">
+  	 			<div class="gallery-item gallery-intem-square" style="background-image:url(img/10.jpg)">
+  	 				<div class="gallery-item-overlay"></div>
+  	 				<div class="gallery-item-ribbon"></div>
+  	 				<div class="gallery-item-text text-center">
+  	 					<p>徐涛</p>
+  	 					<p>程序部成员</p>
+  	 				</div>
+  	 			</div>
+  	 		</div>
+  	 	</div>
+  	  </a>
+  	  <a href="#" title="">
+  	 	<div class="col col-xs-12 col-sm-3 col-md-3 col-lg-3">
+  	 		<div class="gallery-wrap">
+  	 			<div class="gallery-item gallery-intem-square" style="background-image:url(img/11.jpg)">
+  	 				<div class="gallery-item-overlay"></div>
+  	 				<div class="gallery-item-ribbon"></div>
+  	 				<div class="gallery-item-text text-center">
+  	 					<p>李荣华</p>
+  	 					<p>程序部成员</p>
+  	 				</div>
+  	 			</div>
+  	 		</div>
+  	 	</div>
+  	  </a>
+  	  <a href="#" title="">
+  	 	<div class="col col-xs-12 col-sm-3 col-md-3 col-lg-3">
+  	 		<div class="gallery-wrap">
+  	 			<div class="gallery-item gallery-intem-square" style="background-image:url(img/12.jpg)">
+  	 				<div class="gallery-item-overlay"></div>
+  	 				<div class="gallery-item-ribbon"></div>
+  	 				<div class="gallery-item-text text-center">
+  	 					<p>程志铮</p>
+  	 					<p>程序部部长</p>
+  	 				</div>
+  	 			</div>
+  	 		</div>
+  	 	</div>
+  	  </a>
+  	  
+  	 </div>
+  	 <div class="row gallery-row">
+  	  <a href="#" title="">
+  	 	<div class="col col-xs-12 col-sm-3 col-md-3 col-lg-3">
+  	 		<div class="gallery-wrap">
+  	 			<div class="gallery-item gallery-intem-square" style="background-image:url(img/13.jpg)">
+  	 				<div class="gallery-item-overlay"></div>
+  	 				<div class="gallery-item-ribbon"></div>
+  	 				<div class="gallery-item-text text-center">
+  	 					<p>陈思琪</p>
+  	 					<p>美工PS组组长</p>
+  	 				</div>
+  	 			</div>
+  	 		</div>
+  	 	</div>
+  	 </a>
+  	 <a href="#" title="">
+  	 	<div class="col col-xs-12 col-sm-3 col-md-3 col-lg-3">
+  	 		<div class="gallery-wrap">
+  	 			<div class="gallery-item gallery-intem-square" style="background-image:url(img/14.jpg)">
+  	 				<div class="gallery-item-overlay"></div>
+  	 				<div class="gallery-item-ribbon"></div>
+  	 				<div class="gallery-item-text text-center">
+  	 					<p>王瑾</p>
+  	 					<p>工作室室长</p>
+  	 				</div>
+  	 			</div>
+  	 		</div>
+  	 	</div>
+  	 </a>
+  	 <a href="#" title="">
+  	 	<div class="col col-xs-12 col-sm-3 col-md-3 col-lg-3">
+  	 		<div class="gallery-wrap">
+  	 			<div class="gallery-item gallery-intem-square" style="background-image:url(img/15.jpg)">
+  	 				<div class="gallery-item-overlay"></div>
+  	 				<div class="gallery-item-ribbon"></div>
+  	 				<div class="gallery-item-text text-center">
+  	 					<p>徐江</p>
+  	 					<p>工作室副室长</p>
+  	 				</div>
+  	 			</div>
+  	 		</div>
+  	 	</div>
+  	 </a>
+  	 <a href="#" title="">
+  	 	<div class="col col-xs-12 col-sm-3 col-md-3 col-lg-3">
+  	 		<div class="gallery-wrap">
+  	 			<div class="gallery-item gallery-intem-square" style="background-image:url(img/16.jpg)">
+  	 				<div class="gallery-item-overlay"></div>
+  	 				<div class="gallery-item-ribbon"></div>
+  	 				<div class="gallery-item-text text-center">
+  	 					<p>范玉瑶</p>
+  	 					<p>WEB前端成员</p>
+  	 				</div>
+  	 			</div>
+  	 		</div>
+  	 	</div>
+  	 </a>
+  	</div>
+  	<div class="row gallery-row">
+  		<a href="#" title="">
+  	 	<div class="col col-xs-12 col-sm-3 col-md-3 col-lg-3">
+  	 		<div class="gallery-wrap">
+  	 			<div class="gallery-item gallery-intem-square" style="background-image:url(img/17.jpg)">
+  	 				<div class="gallery-item-overlay"></div>
+  	 				<div class="gallery-item-ribbon"></div>
+  	 				<div class="gallery-item-text text-center">
+  	 					<p>张瑞年</p>
+  	 					<p>美工部部长</p>
+  	 				</div>
+  	 			</div>
+  	 		</div>
+  	 	</div>
+  	 </a>
+  	 <a href="#" title="">
+  	 	<div class="col col-xs-12 col-sm-3 col-md-3 col-lg-3">
+  	 		<div class="gallery-wrap">
+  	 			<div class="gallery-item gallery-intem-square" style="background-image:url(img/18.jpg)">
+  	 				<div class="gallery-item-overlay"></div>
+  	 				<div class="gallery-item-ribbon"></div>
+  	 				<div class="gallery-item-text text-center">
+  	 					<p>肖思敏</p>
+  	 					<p>行政部副部长</p>
+  	 				</div>
+  	 			</div>
+  	 		</div>
+  	 	</div>
+  	 </a>
+  	</div>
+  </div>
+  <!--offer-->
+  
+<div class="offer-line" id="offer-text" >
+	<div class="text-lay">
+		<div class="text-top clearfix">
+			<ul class="clearfix">
+				<li><span>网上申报：</span>http://bean.cnwust.com</li>
+				<li><span>时间 :</span>2016-09-06（1天）</li>
+				<li><span>现场报名：</span>青山校区小树林</li>
+				<li><span>时间 : </span>2016-09-07（3天）</li>
+			</ul>
+		</div>
+		<div class="text-mid clearfix">
+			<ul class="clearfix">
+				<li><span>笔试 ：</span>程序、WEB前端 </li>
+				<li><span>时间：</span>2016-09-12</li>
+				<li><span>群面 ：</span>行政部</li>
+				<li><span>时间：</span>2016-09-11</li>
+				<li><span>测评 ：</span>下载PS测试题，面试前提交</li>
+				<li><span>邮箱：</span>996249632@qq.com</li>
+				<li><span>复试 ：</span>程序、WEB前端、PS组</li>
+				<li><span>时间：</span>2016-09-15</li>
+			</ul>
+		</div>
+		<div class="text-bot clearfix">
+			<ul class="clearfix">
+				<li>9月20日晚之前</li>
+			</ul>
+		</div>
+	</div>
+</div>
+
+  <!-- footer -->
+  <div class="footer" id="submit">
+  	<div class="container">
+  		<ul class="foot-content clearfix" id="footContent">
+  			<li>
+  				<h4>Contact</h4>
+  				<ul>
+  					<li>
+  						<i class=" iconfont icon-meifou-person"></i>
+  						+1567 1624 778
+  						<small class="phone-to">(to me)</small>
+  					</li>
+  					<li>
+  						<a href="https://github.com/Jabinzou" title="">
+  							<i class=" iconfont icon-send"></i>
+  							https://github.com/Jabinzou
+  						</a>
+  					</li>
+  				</ul>
+  			</li>
+  			<li>
+  				<h4>Download</h4>
+  				<ul>
+  					<li><a href="#" target="_parent" style="color:#B10DC9;font-weight:bold;">ps试题下载</a></li>
+  					<li><a href="#" target="_parent" style="color:#B10DC9;font-weight:bold;">简历模板下载</a></li>
+  					
+  				</ul>
+  			</li>
+  			<li>
+  				<h4>Features</h4>
+  				<ul>
+  					<li><a href="#" target="_parent">Compose</a></li>
+  					<li><a href="#" target="_parent">Analytics</a></li>
+  				</ul>
+  			</li>
+  			<li style="margin:0;">
+  				<h4>UpLoad</h4>
+  				<ul>
+  					<li>
+	  					<div class="uploader black">
+							<input type="text" class="filename" readonly="readonly"/>
+							<input type="button" name="file" class="button" value="Browse.."/>
+							<input type="file" size="30"/>
+						</div>
+					</li>
+  				</ul>
+  			</li>
+  			<li>
+  				<h4>Platform</h4>
+  				<ul>
+  					<li><a href="#" target="_parent">Github</a></li>
+  				</ul>
+  			</li>
+  			<li class="connect" id="con-me">
+  				<h4>Connect with us</h4>
+  				<ul class="social">
+  					<li class="qq"><a class="" href="#" target="_parent">
+  						<span class=" iconfont icon-qq"></span>
+  					</a>
+  					</li>
+  					<li class="weixin"><a class="" href="#" target="_parent">
+  						<span class="iconfont icon-weixin"></span>
+  					</a>
+  					</li>
+  					<li class="weibo"><a class="" href="#" target="_parent">
+  						<span class="iconfont icon-iconfontweibowukuang"></span>
+  					</a>
+  					</li>
+  				</ul>
+  			</li>
+  		</ul>
+  		<div class="footLink text-center">
+  			<small>Copyright © 2016 Adou（武汉科技大学阿豆工作室）. All rights reserved.</small>
+  		</div>
+  	</div>
+  </div>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="js/jquery-3.1.0.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.flexslider-min.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+    <script src="js/video.js"></script>
+    <script>
+    videojs.options.flash.swf = "js/video-js.swf";
+    </script>
+  </body>
+</html>
